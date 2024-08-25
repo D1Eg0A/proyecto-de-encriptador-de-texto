@@ -21,7 +21,7 @@ function encriptar() {
         bot.src = "./img/bot.jpg"
         tituloMensaje.textContent ="ningun mensaje fue encontrado";
         parrafo.textContent = "ingresa el texto que deseas encriptar o desencriptar";
-        alert("debes ingresar algun texto");
+        swal("Ooops!", "debes ingresar un texto", "warning");
     }
 }
 
@@ -48,7 +48,7 @@ function desencriptar() {
         bot.src = "./img/bot.jpg"
         tituloMensaje.textContent ="ningun mensaje fue encontrado";
         parrafo.textContent = "ingresa el texto que deseas encriptar o desencriptar";
-        alert("debes ingresar algun texto");
+        swal("Ooops!", "debes ingresar un texto", "warning");
 
     }
 

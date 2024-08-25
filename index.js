@@ -19,9 +19,9 @@ function encriptar() {
         bot.src = "./img/encriptado.jpg";
     } else {
         bot.src = "./img/bot.jpg"
-        tituloMensaje.textContent ="ningun mensaje fue encontrado";
+        tituloMensaje.textContent = "ningun mensaje fue encontrado";
         parrafo.textContent = "ingresa el texto que deseas encriptar o desencriptar";
-        swal("Ooops!", "debes ingresar un texto", "warning");
+        alert("debes ingresar algun texto");
     }
 }
 
@@ -38,19 +38,17 @@ function desencriptar() {
         .replace(/ober/gi, "o")
         .replace(/ufat/gi, "u");
 
-        
-    if (texto.length != 0)  {
+
+    if (texto.length != 0) {
         document.getElementById("texto").value = textoCifrado;
         tituloMensaje.textContent = "texto desencriptado con exito";
         parrafo.textContent = "";
-        bot.src = "./img/desencriptar.jpeg" ;
-    }else {
+        bot.src = "./img/desencriptar.jpeg";
+    } else {
         bot.src = "./img/bot.jpg"
-        tituloMensaje.textContent ="ningun mensaje fue encontrado";
+        tituloMensaje.textContent = "ningun mensaje fue encontrado";
         parrafo.textContent = "ingresa el texto que deseas encriptar o desencriptar";
-        swal("Ooops!", "debes ingresar un texto", "warning");
+        alert("debes ingresar algun texto")
 
     }
-
 }
-
